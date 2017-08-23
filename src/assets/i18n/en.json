@@ -1,0 +1,23 @@
+{
+    "WELCOME_TO_DEMO": "Welcme to Angualr2 translation service demo",
+    "STEP": {
+        "FIRST": "First step- install following (app.module.ts)",
+        "SECOND": "Second step- import all the necessary modules (app.module.ts)",
+        "THIRD": "Third step- AOT method (app.module.ts)",
+        "FOURTH": "Fourth step -  to import TranslateModule in @ngModule (app.module.ts)",
+        "FIFTH" :"Fifth step - to create {lang}.json inp path (assets/i18n/lang.json)",
+        "SIXTH": "Sixth step -To initalize translation service (app.component.ts)"
+    },
+    "JSON" :"Example of json file",
+    "AOT": {
+        "1": "export function HttpLoaderFactory(http: Http) { ",
+        "2": "    return new TranslateHttpLoader(http, './assets/i18n/', '.json');}"
+    },
+    "IMPORTS": " imports: [BrowserModule, HttpModule, TranslateModule.forRoot({loader: { provide: TranslateLoader, useFactory: HttpLoaderFactory, deps: [Http]}})],",
+    "ANGUALR2": "If you are using angular2",
+    "TRANSLATE" :{
+        "1": " constructor( private translate: TranslateService) { translate.setDefaultLang('en');this.clientLnag = translate.getBrowserLang(); translate.use(this.clientLnag);}",
+        "2": "In your html file use “translate“ pipe to handle translation",
+        "3" : " {{ 'WELCOME_TO_DEMO' | translate }} "
+    }
+}

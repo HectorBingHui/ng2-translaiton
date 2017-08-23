@@ -1,0 +1,23 @@
+{
+    "WELCOME_TO_DEMO": "欢迎来到 Angular2 翻译示范页面",
+    "STEP": {
+        "FIRST": "第一步- 下载以下模块 (app.module.ts)",
+        "SECOND": "第二步- 引用所需的模块 (app.module.ts)",
+        "THIRD": "第三步- AOT 方程式 (app.module.ts)",
+        "FOURTH": "第四步-引入 翻译模块 (app.module.ts)",
+        "FIFTH" :"第五步 - 建立  {lang}.json 文件 以 (assets/i18n/lang.json) 路径",
+        "SIXTH": "第六部 - 初始化 翻译服务 (app.component.ts)"
+    },
+    "JSON": "json 文件的示范",
+    "AOT": {
+        "1": "export function HttpLoaderFactory(http: Http) { ",
+        "2": "   return new TranslateHttpLoader(http, './assets/i18n/', '.json');}"
+    },
+    "IMPORTS": " imports: [BrowserModule, HttpModule, TranslateModule.forRoot({loader: { provide: TranslateLoader, useFactory: HttpLoaderFactory, deps: [Http]}})],",
+    "ANGUALR2": "如果使用的是 angular2",
+    "TRANSLATE" :{
+        "1": " constructor( private translate: TranslateService) { translate.setDefaultLang('en');this.clientLnag = translate.getBrowserLang(); translate.use(this.clientLnag);}",
+        "2": "在你的 html 文件里 以 “translate“ 的 pipe 使用如下 ",
+        "3" : "{{ 'WELCOME_TO_DEMO' | translate }}"
+    }
+}

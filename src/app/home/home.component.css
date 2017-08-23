@@ -1,0 +1,27 @@
+.container{
+    margin:20px;
+    padding:0px 20%;
+ 
+}
+
+.title{
+    text-align: center;
+}
+
+.step{
+    display: flex;
+    flex-direction: column;
+}
+
+.first_step, .second_step, .third_step, .fourth_step, .fifth_step, .sixth_step{
+    margin:5px;
+    padding:10px;
+}
+
+.image{
+    width: 100%;
+}
+
+b{
+    margin-bottom:10px;
+}

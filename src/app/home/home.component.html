@@ -1,0 +1,59 @@
+<div class="container">
+  <div class="step">
+    <div class="first_step">
+      <b>{{ 'STEP.FIRST' | translate }}</b>
+      <div>
+        npm install @ngx-translate/core --save
+        <br> npm install @ngx-translate/http-loader@0.1.0 --save ({{ 'ANGUALR2' | translate }} )
+      </div>
+    </div>
+
+    <div class="second_step">
+
+      <b> {{ 'STEP.SECOND' | translate }}</b>
+      <div>
+        import {{ '{ TranslateModule, TranslateLoader} ' }} from '@ngx-translate/core';
+        <br> import {{ '{ HomeComponent } ' }} from './home/home.component';
+        <br> import {{ '{Http, HttpModule} ' }} from '@angular/http';
+        <br> import {{ '{TranslateHttpLoader} ' }} from '@ngx-translate/http-loader';
+        <br>
+      </div>
+    </div>
+    <div class="third_step">
+        <b> {{ 'STEP.THIRD' | translate }}</b>
+        <div>
+        {{ 'AOT.1' | translate }}<br>
+        {{ 'AOT.2' | translate }}
+        </div>
+    </div>
+    <div class="fourth_step">
+      <b> {{ 'STEP.FOURTH' | translate }} </b> <br>
+      {{ 'IMPORTS' | translate}}
+    </div>
+
+    <div class="fifth_step">
+        <b> {{ 'STEP.FIFTH' | translate }} </b> <br>
+        <div> {{ 'JSON' | translate }} </div>
+        {{ '{ "WELCOME_TO_DEMO": "Welcme to Angualr2 translation service demo", 
+        "AWESOME": "If you are using angular2"}'}}
+      </div>
+
+      <div class="sixth_step">
+          <b> {{ 'STEP.SIXTH' | translate }} </b> <br>
+           import {{ '{TranslateService} '}}  from '@ngx-translate/core';
+            <br>
+           <li> {{ 'TRANSLATE.1' | translate }}</li>
+            <br>
+            <li>{{ 'TRANSLATE.2' | translate }}</li>
+            <br>
+            {{ 'TRANSLATE.3' | translate }}
+        </div>
+        <div class="image">
+          <div>app.module.ts</div><br>
+          <img src="./assets/aot.png" class="image"><br>
+          <div>app.component.ts</div><br>
+          <img src="./assets/component.png" class="image">
+
+        </div>
+  </div>
+</div>

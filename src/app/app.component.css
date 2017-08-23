@@ -1,0 +1,12 @@
+.home{
+    text-align:center;
+}
+
+button{
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: maroon;
+    padding:5px;
+    color:white;
+    font-size: 2em;
+}
